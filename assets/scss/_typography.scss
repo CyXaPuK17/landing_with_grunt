@@ -1,0 +1,20 @@
+@use "variables";
+
+h1 {
+  color: variables.$color-white;
+  font-weight: 600;
+  font-size: 60px;
+}
+
+h2 {
+  color: variables.$color-white;
+  font-weight: 500;
+  font-size: 38px;
+}
+
+p {
+  color: variables.$color-white;
+  font-size: 17px;
+  font-weight: 400;
+  line-height: 1.7;
+}

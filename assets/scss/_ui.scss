@@ -1,0 +1,48 @@
+@use "variables";
+
+.btn {
+  color: variables.$color-white;
+  font-size: 16px;
+  font-weight: 500;
+  padding: 20px 40px;
+  border: 2px solid variables.$color-white;
+  border-radius: 30px;
+  background-color: transparent;
+  cursor: pointer;
+  transition: color 0.3s ease, background-color 0.3s ease;
+
+  &:hover {
+    color: variables.$color-black;
+    background-color: variables.$color-white;
+  }
+
+  &--dark {
+    color: variables.$color-black;
+    border-color: variables.$color-black;
+
+    &:hover {
+      background-color: variables.$color-black;
+      color: variables.$color-white;
+    }
+  }
+}
+
+.input {
+  width: 100%;
+  max-width: 525px;
+  padding: 15px;
+  color: variables.$color-white;
+  font-size: 16px;
+  border: 1px solid variables.$color-white;
+  background-color: transparent;
+  outline: none;
+  font-family: inherit;
+
+  &::placeholder {
+    color: rgba(variables.$color-white, 0.7);
+  }
+
+  &:focus {
+    border-color: rgba(variables.$color-white, 0.5);
+  }
+}
